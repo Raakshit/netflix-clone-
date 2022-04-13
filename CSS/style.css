@@ -1,0 +1,146 @@
+/* root */
+:root{
+    --primary: #141414;
+    --light: #f3f3f3;
+    --dark: #686868;
+}
+html,body{
+    width: 100vh;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary);
+    color: var(--light);
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    line-height: 1.4;
+
+}
+img{
+    max-width: 100%;
+
+}
+h1{
+    padding-top: 60px;
+}
+.wrapper{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Header */
+header{
+    padding: 20px 20px 0px 20px;
+    position: fixed;
+    top: 0;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "nt mn mn sb . . .";
+    background-color: var(--primary);
+    width: 100%;
+    margin-bottom: 0px;
+
+}
+.netflixlogo{
+    grid-area: nt;
+    object-fit: cover;
+    width: 100px;
+    max-height: 100%;
+    padding-left: 25px;
+    padding-top: 0px;
+
+}
+.netflixlogo img{
+    height: 35px;
+} 
+#logo{
+    color: #e50914;
+    margin-bottom: 0;
+    padding: 0;
+}
+.main-nav{
+    grid-area: mn;
+    padding: 5px 30px 0 20px;
+
+}
+.main-nav a{
+    color: var(--light);
+    text-decoration: none;  /* for removing underline */
+    margin: 7px;
+
+}
+.main-nav a:hover{
+    color: var(--dark);
+}
+.sub-nav{
+    grid-area: sb;
+    padding: 5px 40px 0 40px;
+}
+.sub-nav a{
+    color: var(--light);
+    text-decoration: none;
+    margin: 7px;
+}
+.sub-nav a:hover{
+    color: var(--dark);
+}
+/* main container */
+
+.main-container{
+    padding: 50px;
+    padding-bottom: 0px;
+}
+.box{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(6,minmax(31%,1fr));
+}
+
+.box a{
+    transition: tansform .3s;
+
+}
+.box a:hover{
+    transition: transform .3s;
+    transform: scale(1.4);
+}
+.box img{
+    border-radius: 2px;
+}
+/* links and footers  */
+.link{
+    padding: 50px;
+}
+.sub-links ul{
+    list-style: none;
+    padding: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, minmax(42%,1fr));
+}
+.sub-links a{
+    color: var(--light);
+    text-decoration: none;
+
+}
+.sub-links a:hover{
+    color: var(--dark);
+    text-decoration: underline;
+}
+
+.logo a{
+    padding: 10px;
+}
+.logo{
+    color: var(--dark);
+}
+footer{
+    padding: 10px;
+    /* text-align: center; */
+    color: var(--dark);
+    margin: 0;
+}
